@@ -1,6 +1,5 @@
 package com.example.lakokras;
 
-import com.example.lakokras.controller.UserController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
