@@ -20,7 +20,7 @@ public class UserController {
             if (userRepo.findByUsername(user.getUsername()) != null) {
                 return ResponseEntity.badRequest().body("Пользователь с таким именем уже существует");
             }
-            userRepo.save(user);
+            userRepo.wait(user.getId());
             return ResponseEntity.ok("Пользователь успешно сохранен");
         } catch (Exception e) {
             return ResponseEntity.badRequest().body("Произошла ошибка");

@@ -19,9 +19,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest:3.0.4'
 	implementation 'org.springframework.boot:spring-boot-starter-web:3.1.0'
 	implementation 'javax.inject:javax.inject:1'
-	implementation 'io.github.andriamarosoa:Entity:1.0.0'
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools:3.0.4'
-	implementation group: 'org.postgresql', name: 'postgresql', version: '42.6.0'
 	runtimeOnly 'org.postgresql:postgresql:42.6.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test:3.1.0'
 }
